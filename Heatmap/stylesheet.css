@@ -1,0 +1,278 @@
+/* General CSS */
+
+/* Unite colors */
+
+/* "#3e989a",
+"#4c9455",
+"#644380" */
+
+body {
+  font-family: "Roboto";
+  font-weight: 300;
+  /* background-color: #FBFBFB; */
+}
+
+/* h1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+} */
+
+.headline1 {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 48px;
+}
+
+.headline2 {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.prelovedesc {
+  width: 50%;
+  margin: auto;
+}
+
+hr {
+  height: 1px;
+  /* background-color: white; */
+  background-color: #3e989a;
+  border: none;
+}
+
+/* h6 {
+  color: white;
+  padding-top: 10px;
+} */
+
+
+/* .colmn1 {
+  background-color: #3e989a;
+}
+
+.colmn2 {
+  background-color: #8cc1c2;
+} */
+
+/* .first {
+  padding-top: 50px;
+  margin: 0;
+  color: white;
+  text-align: left;
+} */
+
+/* .second {
+  margin: 0;
+  color: white;
+  text-align: left;
+} */
+
+.logo {
+  margin-left: 30px;
+  padding-top: 30px;
+}
+
+.recommendation {
+  width: 18%;
+  height: auto;
+}
+
+.icon {
+  width: 40%;
+  height: auto;
+}
+
+.toolbox {
+  text-align: center;
+}
+
+.margin {
+  margin-bottom: 30px;
+}
+
+.marginsmall {
+  margin-top: 10px;
+}
+
+.box {
+  border-width: 2px;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: #3f989a;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 25px;
+  margin-top: 25px;
+
+}
+
+.information {
+  background-color: white;
+  border-style: solid;
+  border-color: #3f989a;
+  /* color: white; */
+  text-align: center;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.btn-info {
+  background-color: #3f989a !important;
+}
+
+.btn-light {
+  background-color: white;
+  border-color: white;
+}
+
+.align-right {
+  text-align: right;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.welcome {
+  text-align: center;
+  /* color: white; */
+}
+
+.text {
+  padding-top: 70px;
+}
+
+.blooms {
+  color: black;
+  text-decoration: underline;
+}
+
+.favicon {
+  color: #3e989a;
+}
+
+.home {
+  margin-left: 1100px;
+}
+
+.help {
+  text-align: left;
+}
+
+/* Heatmap */
+
+.rect {
+  opacity: 0.8;
+}
+
+.legendtext {
+  font-size: 13px;
+}
+
+#my_dataviz {
+  width: 800px;
+  height: 600px;
+  padding: 20px;
+}
+
+#my_dataviz > * {
+  display: block;
+}
+
+.chart {
+  overflow-y: scroll;
+  max-height: 500px;
+}
+
+.vizcol {
+  padding: 10px;
+}
+
+.tooltip {
+    top:130px;
+}
+
+.y_axis {
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.y_axis:hover {
+  text-shadow: 1px 1px blue;
+}
+
+.yaxisdescription {
+  font-size: 13px;
+}
+
+.x_axis {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.xaxisdescription {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.imgcol {
+  text-align: left;
+}
+
+/* Zoomable circles */
+
+.node--root,
+.node--leaf {
+  pointer-events: none;
+}
+
+.label {
+  font-family: Roboto;
+  text-anchor: middle;
+  font-size: 18px;
+  fill: white;
+  display: block;
+}
+
+.description {
+  font-size: 10px;
+}
+
+.node {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.node:hover {
+  stroke: black;
+  stroke-width: 2px;
+}
+
+.tooltip4 {
+  position: absolute;
+  top:180px;
+}
+
+.bubbleviz {
+  margin-right: 50px;
+}
+
+.preloved {
+  width: 50%;
+}
+
+.marginsubmit {
+  border-width: 2px;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: #3f989a;
+  width: 80%;
+  margin: auto;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  /* width: 50%;
+  height: auto;
+  text-align: center; */
+}

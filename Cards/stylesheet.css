@@ -1,0 +1,87 @@
+body {
+  font-family: "Roboto";
+  font-weight: 300;
+}
+
+.logo {
+  margin-left: 30px;
+  padding-top: 30px;
+}
+
+.favicon {
+  color: #3e989a;
+  margin-left: 1100px;
+}
+
+.filters {
+  background-image: url("backgroundpattern_large.png");
+  height: 300px;
+}
+
+.filtercenter {
+  margin-top: 120px;
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 180px;
+}
+
+.btn, .btn-info {
+  background-color: #3f989a !important;
+}
+
+.digitaltool {
+  width: 18%;
+  height: auto;
+}
+
+.digitaltools {
+  margin-bottom: 30px;
+}
+
+.homebtn {
+  text-align: left;
+}
+
+.welcome {
+  text-align: center;
+}
+
+.headline {
+  text-align: center;
+  /* margin-left: 180px; */
+  margin-top: 20px;
+}
+
+.headline2 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.description {
+  width: 50%;
+  border-style: solid;
+  border-color: #3f989a;
+  border-radius: 15px;
+  margin: auto;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.center {
+  text-align: center;
+}
+
+.margin {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card-img-top {
+    width: 60%;
+}
+
+.card {
+  margin-top: 20px;
+  border-color: #3f989a;
+}

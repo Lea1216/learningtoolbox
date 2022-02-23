@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylesheet.css">
+  <!-- d3 script -->
+  <script src="https://d3js.org/d3.v4.js"></script>
+  <!-- font awesome  -->
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script> -->
+  <script defer src="https://use.fontawesome.com/releases/v6.0.0/js/all.js"></script>
+  <!-- google fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <title></title>
+</head>
+
+<body>
+  <div class="logo">
+    <img src="JPROV.png" alt="Logo">
+    <a href="/Users/leablecher/Desktop/Toolbox/PrototypingLea/Combinationsforwebsite/FinalPrototype/index.html"> <i class="fa-solid fa-house-chimney fa-2x favicon home"></i></a>
+  </div>
+  <div class="welcome">
+    <!-- <svg class="recommendation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><style>.cls-1{fill:#8cc1c2;}.cls-2,.cls-4{fill:none;}.cls-2{stroke:#fdffff;stroke-linecap:round;stroke-width:10px;stroke-dasharray:0 40.25;}.cls-2,.cls-3,.cls-4{stroke-miterlimit:10;}.cls-3{fill:#fff;stroke:#4a4a49;}.cls-4{stroke:#1d1d1b;}.cls-5{fill:#3f989a;}.cls-6{fill:#4c9455;}.cls-7{fill:#644380;}</style></defs><g id="iconography-1"><circle class="cls-1" cx="496" cy="500.5" r="350"/><circle class="cls-2" cx="497.33" cy="500.5" r="326.67"/><rect class="cls-3" x="361.33" y="291.5" width="389.33" height="513.33" rx="12"/><rect class="cls-3" x="377.92" y="311.93" width="357.33" height="471.14" rx="12"/><line class="cls-4" x1="556.34" y1="515.52" x2="556.34" y2="725.18"/><circle class="cls-5" cx="556.64" cy="485.27" r="17.93"/><line class="cls-4" x1="471.2" y1="467.34" x2="471.2" y2="725.18"/><line class="cls-4" x1="642.2" y1="428.58" x2="642.2" y2="725.18"/><circle class="cls-6" cx="642.34" cy="401.27" r="17.93"/><circle class="cls-7" cx="470.75" cy="437.27" r="17.93"/><polygon class="cls-6" points="378.87 311.51 367.06 444.99 360.88 418.87 350.13 443.49 361.94 310.01 378.87 311.51"/><polygon class="cls-6" points="391.03 309.96 408.82 442.78 397.05 418.66 391.97 445.04 374.18 312.22 391.03 309.96"/><circle class="cls-3" cx="377.5" cy="313.77" r="50"/><polygon class="cls-6" points="378 331.45 356.37 347.43 364.88 321.92 343 306.28 369.89 306.49 378 280.85 386.11 306.49 413 306.28 391.13 321.92 399.63 347.43 378 331.45"/></g></svg> -->
+    <svg class="preloved" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 946">
+      <defs>
+        <style>
+          .cls-1 {
+            fill: #8cc1c2;
+          }
+
+          .cls-2 {
+            fill: none;
+            stroke: #fdffff;
+            stroke-linecap: round;
+            stroke-width: 10px;
+            stroke-dasharray: 0 40.25;
+          }
+
+          .cls-11,
+          .cls-2,
+          .cls-4 {
+            stroke-miterlimit: 10;
+          }
+
+          .cls-3,
+          .cls-6 {
+            fill: #4a4a49;
+          }
+
+          .cls-4 {
+            fill: #fff;
+          }
+
+          .cls-11,
+          .cls-4 {
+            stroke: #4a4a49;
+          }
+
+          .cls-11,
+          .cls-5 {
+            fill: #3f989a;
+          }
+
+          .cls-12,
+          .cls-6 {
+            font-size: 43.51px;
+          }
+
+          .cls-6 {
+            font-family: RobotoCondensed-Light, Roboto Condensed;
+            font-weight: 300;
+          }
+
+          .cls-7 {
+            fill: #644380;
+          }
+
+          .cls-8 {
+            fill: #4c9455;
+          }
+
+          .cls-9 {
+            letter-spacing: -0.01em;
+          }
+
+          .cls-10 {
+            letter-spacing: -0.01em;
+          }
+
+          .cls-12 {
+            fill: #fcfcfc;
+            font-family: RobotoCondensed-Regular, Roboto Condensed;
+          }
+        </style>
+      </defs>
+      <g id="iconography-1">
+        <circle class="cls-1" cx="963.4" cy="465.5" r="276.23" />
+        <circle class="cls-2" cx="962.31" cy="463.92" r="257.82" />
+        <path class="cls-3"
+          d="M846.69,432.55v18.71h-3.6v-46h13.37c4.06,0,7.27,1.22,9.6,3.67s3.51,5.8,3.51,10.08-1.13,7.71-3.39,10-5.53,3.51-9.78,3.51Zm0-3.38h9.77a9.18,9.18,0,0,0,7-2.64q2.47-2.64,2.48-7.47a11,11,0,0,0-2.51-7.62,8.94,8.94,0,0,0-7-2.78h-9.8Z" />
+        <path class="cls-3" d="M890.62,420.35a13.82,13.82,0,0,0-2.21-.22,6.65,6.65,0,0,0-4.89,2,11.27,11.27,0,0,0-2.79,5.53v23.61h-3.51V417.07h3.44l.07,5.12q2.49-5.76,7.83-5.75a4.3,4.3,0,0,1,2.12.41Z" />
+        <path class="cls-3"
+          d="M908.06,451.89q-6,0-9.45-3.95t-3.47-11.25v-4.17q0-7.51,3.28-11.8a10.76,10.76,0,0,1,9-4.28q5.56,0,8.49,3.63t3,11.12v3.29H898.61v1.93q0,5.88,2.52,9.07a8.49,8.49,0,0,0,7.09,3.19,10.18,10.18,0,0,0,8.18-3.7l1.84,2.34Q914.88,451.89,908.06,451.89Zm-.6-32.17a7.54,7.54,0,0,0-6.37,2.93c-1.48,1.94-2.3,4.79-2.44,8.54h16.77v-.91Q915.18,419.72,907.46,419.72Z" />
+        <path class="cls-3" d="M936.34,432.65H923.58v-3.29h12.76Z" />
+        <path class="cls-3" d="M947.5,447.91h19v3.35h-22.6v-46h3.64Z" />
+        <path class="cls-3"
+          d="M971.8,432.43q0-7.4,3.35-11.7a11.94,11.94,0,0,1,18.28-.06q3.33,4.23,3.37,11.66V436q0,7.53-3.37,11.73a12,12,0,0,1-18.15.09q-3.36-4.11-3.48-11.31Zm3.54,3.52c0,3.93.79,7,2.39,9.28a8.26,8.26,0,0,0,13.24.12c1.52-2.16,2.3-5.27,2.32-9.31v-3.63q0-5.9-2.4-9.29A8.05,8.05,0,0,0,977.8,423q-2.4,3.31-2.46,9.12Z" />
+        <path class="cls-3" d="M1013.48,445.76l8.41-28.69h3.6l-10.65,34.19h-2.78l-10.71-34.19h3.6Z" />
+        <path class="cls-3"
+          d="M1043.15,451.89q-6,0-9.45-3.95t-3.47-11.25v-4.17q0-7.51,3.29-11.8a10.74,10.74,0,0,1,9-4.28q5.57,0,8.49,3.63t3,11.12v3.29H1033.7v1.93q0,5.88,2.52,9.07a8.49,8.49,0,0,0,7.09,3.19,10.21,10.21,0,0,0,8.19-3.7l1.83,2.34Q1050,451.89,1043.15,451.89Zm-.6-32.17a7.51,7.51,0,0,0-6.36,2.93q-2.24,2.91-2.45,8.54h16.78v-.91Q1050.26,419.72,1042.55,419.72Z" />
+        <path class="cls-3"
+          d="M1060.22,432.58q0-8,2.81-12.08c1.87-2.71,4.66-4.06,8.34-4.06a9.31,9.31,0,0,1,8.69,5.21V402.72h3.51v48.54h-3.29l-.15-4.39a9.47,9.47,0,0,1-8.79,5,9.36,9.36,0,0,1-8.23-4.11q-2.83-4.11-2.89-11.66Zm3.57,3.2q0,6.57,2,9.67t6.28,3.09q5.52,0,8-5.28V425.54q-2.37-5.73-8-5.72-4.3,0-6.28,3.06t-2,9.48Z" />
+        <path class="cls-3" d="M855.43,510.21v18.71h-3.6v-46H865.2q6.09,0,9.6,3.67t3.51,10.08q0,6.54-3.4,10t-9.78,3.5Zm0-3.38h9.77a9.19,9.19,0,0,0,7-2.64q2.47-2.64,2.48-7.47a11,11,0,0,0-2.51-7.62,8.94,8.94,0,0,0-7-2.78h-9.8Z" />
+        <path class="cls-3" d="M899.36,498a13.93,13.93,0,0,0-2.22-.22,6.65,6.65,0,0,0-4.88,2,11.23,11.23,0,0,0-2.79,5.53v23.61H886V494.73h3.44l.07,5.12q2.49-5.76,7.83-5.75a4.33,4.33,0,0,1,2.12.41Z" />
+        <path class="cls-3"
+          d="M922.33,528.92a21.54,21.54,0,0,1-.63-4.74,11.34,11.34,0,0,1-4.06,4,10.83,10.83,0,0,1-5.39,1.4,9.25,9.25,0,0,1-6.89-2.49q-2.46-2.5-2.46-7.11a10,10,0,0,1,3.42-8q3.43-2.94,9.47-3h5.88v-4.77c0-2.44-.61-4.2-1.82-5.26a7.88,7.88,0,0,0-5.33-1.6,7.61,7.61,0,0,0-5.34,1.9,6.31,6.31,0,0,0-2.08,4.9l-3.51,0a9.33,9.33,0,0,1,3.16-7.13,11.23,11.23,0,0,1,7.93-2.92q5.16,0,7.81,2.59c1.77,1.73,2.65,4.24,2.65,7.55V521a23.16,23.16,0,0,0,.92,7.52v.38Zm-9.64-2.75a9.57,9.57,0,0,0,5.48-1.61,9.46,9.46,0,0,0,3.5-4.3V512H916.1q-4.8.06-7.23,2.13a7,7,0,0,0-2.44,5.58Q906.43,526.17,912.69,526.17Z" />
+        <path class="cls-3"
+          d="M945.52,526.27a7.45,7.45,0,0,0,5.63-2,8.74,8.74,0,0,0,2.12-5.89h3.38a11.77,11.77,0,0,1-3.35,8.24,10.77,10.77,0,0,1-7.78,3q-6.09,0-9.21-3.9t-3.17-11.58V509.9q0-7.84,3.11-11.82c2.07-2.66,5.16-4,9.24-4a10.38,10.38,0,0,1,8,3.2q2.94,3.21,3.13,9h-3.38a10.44,10.44,0,0,0-2.15-6.55,7,7,0,0,0-5.63-2.33q-4.54,0-6.68,3.06c-1.42,2.05-2.13,5.18-2.13,9.41v3.88q0,6.57,2.14,9.55T945.52,526.27Z" />
+        <path class="cls-3" d="M969.35,486v8.72h5.85v3.16h-5.85v22.72a8.24,8.24,0,0,0,.84,4.19,3,3,0,0,0,2.8,1.37,14.06,14.06,0,0,0,2.52-.32l.1,3.16a8.69,8.69,0,0,1-3.45.54q-6.15,0-6.32-8.47V497.89h-5.27v-3.16h5.27V486Z" />
+        <path class="cls-3" d="M982.72,484.87a2.84,2.84,0,0,1,.6-1.83,2,2,0,0,1,1.7-.76,2.09,2.09,0,0,1,1.73.76,3,3,0,0,1,0,3.65,2.14,2.14,0,0,1-1.73.74,2.08,2.08,0,0,1-1.7-.74A2.81,2.81,0,0,1,982.72,484.87Zm4,44h-3.54V494.73h3.54Z" />
+        <path class="cls-3"
+          d="M1007.27,526.27a7.46,7.46,0,0,0,5.63-2,8.73,8.73,0,0,0,2.11-5.89h3.38a11.68,11.68,0,0,1-3.35,8.24,10.73,10.73,0,0,1-7.77,3c-4.06,0-7.14-1.3-9.21-3.9s-3.13-6.46-3.18-11.58V509.9q0-7.84,3.12-11.82t9.24-4a10.38,10.38,0,0,1,8,3.2q2.94,3.21,3.12,9H1015a10.32,10.32,0,0,0-2.15-6.55,7,7,0,0,0-5.62-2.33q-4.54,0-6.68,3.06c-1.43,2.05-2.14,5.18-2.14,9.41v3.88q0,6.57,2.15,9.55C1002,525.27,1004.24,526.27,1007.27,526.27Z" />
+        <path class="cls-3"
+          d="M1037.1,529.55q-6,0-9.45-3.95t-3.47-11.25v-4.17q0-7.51,3.28-11.8a10.76,10.76,0,0,1,9-4.28q5.57,0,8.49,3.63t3,11.12v3.29h-20.32v1.93q0,5.88,2.52,9.07a8.49,8.49,0,0,0,7.09,3.19,10.18,10.18,0,0,0,8.18-3.7l1.84,2.34Q1043.92,529.54,1037.1,529.55Zm-.6-32.17a7.54,7.54,0,0,0-6.37,2.93c-1.48,1.94-2.3,4.79-2.44,8.54h16.78v-.91Q1044.21,497.38,1036.5,497.38Z" />
+        <path class="cls-3"
+          d="M1072.53,520.49a5.08,5.08,0,0,0-1.84-3.86,25.25,25.25,0,0,0-6.21-3.63,34.53,34.53,0,0,1-6.11-3.28,8.73,8.73,0,0,1-2.56-2.86,7.66,7.66,0,0,1-.82-3.66,8.44,8.44,0,0,1,2.84-6.53,10.58,10.58,0,0,1,7.36-2.57,10.83,10.83,0,0,1,7.78,2.75,9.51,9.51,0,0,1,2.91,7.26h-3.51a6.45,6.45,0,0,0-2-4.82,8.2,8.2,0,0,0-10.1-.33,5.22,5.22,0,0,0-1.82,4.11,4.39,4.39,0,0,0,1.39,3.35,27.92,27.92,0,0,0,6,3.51,36.43,36.43,0,0,1,6.57,3.44,9.71,9.71,0,0,1,2.72,3,8,8,0,0,1,.92,3.93,8.39,8.39,0,0,1-2.94,6.74,11.58,11.58,0,0,1-7.75,2.49,12,12,0,0,1-8.23-2.78,9.14,9.14,0,0,1-3.14-7.17h3.54a6.65,6.65,0,0,0,2.13,4.92,8.38,8.38,0,0,0,5.7,1.75,8.05,8.05,0,0,0,5.19-1.58A5.13,5.13,0,0,0,1072.53,520.49Z" />
+        <rect class="cls-4" x="622.46" y="530.46" width="94.88" height="402.95" rx="12" transform="translate(1401.83 62.03) rotate(90)" />
+        <circle class="cls-5" cx="525.03" cy="731.87" r="14.15" /><text class="cls-6" transform="translate(565.65 748.19)">Document</text>
+        <rect class="cls-4" x="1312.52" y="145.56" width="94.88" height="402.95" rx="12" transform="translate(1706.99 -1012.92) rotate(90)" />
+        <circle class="cls-7" cx="1215.09" cy="346.97" r="14.15" /><text class="cls-6" transform="translate(1255.7 363.29)">Test</text>
+        <rect class="cls-4" x="562.36" y="35.05" width="94.88" height="402.95" rx="12" transform="translate(846.32 -373.29) rotate(90)" />
+        <circle class="cls-8" cx="464.94" cy="236.46" r="14.15" /><text class="cls-6" transform="translate(505.55 252.78)">Imp<tspan class="cls-9" x="64.95" y="0">r</tspan>
+          <tspan class="cls-10" x="77.68" y="0">o</tspan>
+          <tspan x="98.71" y="0">ve</tspan>
+        </text>
+        <rect class="cls-11" x="1225.09" y="530.27" width="94.88" height="402.95" rx="12" transform="translate(2004.27 -540.79) rotate(90)" /><text class="cls-12" transform="translate(1218.13 748)">Share!</text>
+        <path class="cls-3"
+          d="M1231.67,798.5a428.59,428.59,0,0,1-560.45-20h-1.47a429.63,429.63,0,0,0,563.52,20Zm158.41-385h-1A431.93,431.93,0,0,1,1392,464a427.36,427.36,0,0,1-60.9,220.5h1.17A428.49,428.49,0,0,0,1393,464,434.25,434.25,0,0,0,1390.08,413.5Zm-30.75-114h1.08q-.59-1.44-1.2-2.88A429.87,429.87,0,0,0,658.94,159.94q-5.21,5.2-10.2,10.56h1.37q4.68-5,9.54-9.85A429.25,429.25,0,0,1,1358.29,297C1358.64,297.84,1359,298.67,1359.33,299.5Z" />
+        <path class="cls-3" d="M172.93,730.8a428.67,428.67,0,0,0,228.48,10.11l.36-1.11a430.87,430.87,0,0,1-275.68-28.3l-.31,1A436.67,436.67,0,0,0,172.93,730.8Z" />
+        <path class="cls-5"
+          d="M571.6,283.5c-1.19,2.54-2.35,5.1-3.47,7.65l.91.41q1.79-4,3.66-8.06Zm-6.64,15c-1.54,3.68-3.05,7.42-4.49,11.13l.93.36c1.44-3.7,2.94-7.44,4.48-11.11Zm-7.31,18.63c-1.37,3.74-2.7,7.55-4,11.34l1,.31c1.26-3.77,2.6-7.58,4-11.31Zm-6.44,19c-1.19,3.79-2.34,7.65-3.42,11.47l1,.28c1.08-3.82,2.23-7.67,3.42-11.45Zm-5.52,19.17c-1,3.84-2,7.75-2.89,11.62l1,.23c.9-3.86,1.87-7.76,2.88-11.59Zm-4.63,19.41c-.83,3.89-1.62,7.84-2.34,11.75l1,.18c.72-3.9,1.51-7.84,2.34-11.72Zm-3.72,19.61c-.65,3.91-1.25,7.89-1.79,11.83l1,.14c.54-3.93,1.14-7.91,1.79-11.81ZM534.53,414c-.47,3.95-.88,8-1.24,11.91l1,.09c.36-3.94.78-7.94,1.25-11.88Zm-1.89,19.87c-.29,3.95-.52,8-.7,11.95l1,0c.18-4,.41-8,.7-11.92Zm-1,19.92c-.1,3.87-.15,7.8-.15,11.67v.3h1v-.3c0-3.86,0-7.78.15-11.64Zm.93,19.94-1,0c.07,4,.2,8,.39,12l1,0C532.78,481.76,532.65,477.74,532.58,473.77Zm.83,19.89-1,.06c.25,4,.57,8,.93,11.94l1-.09C534,501.62,533.66,497.61,533.41,493.66Zm1.73,19.83-1,.11c.43,3.94.93,7.94,1.48,11.88l1-.14C536.07,521.41,535.58,517.42,535.14,513.49Zm2.65,19.73-1,.16c.62,3.92,1.3,7.89,2,11.79l1-.18C539.09,541.09,538.41,537.13,537.79,533.22Zm3.56,19.59-1,.2c.8,3.88,1.66,7.81,2.57,11.69l1-.23C543,560.6,542.14,556.68,541.35,552.81Zm4.46,19.4-1,.24c1,3.85,2,7.74,3.12,11.56l1-.27C547.83,579.92,546.79,576,545.81,572.21Zm5.36,19.17-.95.29c1.16,3.8,2.38,7.64,3.65,11.4l.94-.32C553.55,599,552.33,595.17,551.17,591.38Zm6.25,18.9-.94.33c1.34,3.76,2.74,7.53,4.18,11.22l.93-.36C560.16,617.79,558.75,614,557.42,610.28Zm7.12,18.59-.93.38c1.51,3.67,3.08,7.36,4.68,11l.92-.41C567.61,636.21,566,632.53,564.54,628.87Zm8,18.18-.91.42c1.67,3.59,3.42,7.21,5.19,10.75l.89-.44C575.9,654.24,574.15,650.63,572.49,647.05Zm8.78,17.8L581,665h.37Z" />
+        <path class="cls-5" d="M665.63,777h-1.45l-.52-.5.7-.72Z" />
+      </g>
+      <g id="prcoess-image">
+        <path class="cls-3" d="M648.85,170.79l36.87.33-.92-.93-35-.31.31-35-.92-.94Z" />
+        <path class="cls-5" d="M583.22,665.52l16-36.65-1.32.53-15.21,34.8L547.91,649l-1.32.52Z" />
+        <path class="cls-3" d="M1233.2,797.69l-39.68-5.06.87,1.12,37.68,4.81-4.8,37.67.86,1.12Z" />
+        <path class="cls-3" d="M1389,412.2l-21.73,33.57,1.38-.3,20.65-31.89,31.88,20.64,1.39-.29Z" />
+        <path class="cls-3" d="M402.47,739.34,369.4,723l.42,1.23,31.41,15.48-15.47,31.4.41,1.24Z" />
+      </g>
+    </svg>
+  </div>
+  <div class="headline toolbox">
+    <!-- <h1 class="margin">Pre-Loved Practices for Online Teaching</h1> -->
+    <p class="headline1"> Pre-Loved Practices for Online Teaching</p>
+  </div>
+  <div class="container toolbox prelovedesc">
+    <p>Here you can find collectively gathered practices that can easily be implemented in new or already existing online courses. All practices have been previously tested by educator during online teaching. Do you want to share your Pre-Loved Practice? Submit it below.</p>
+    <p>Let's start creating engaging virtual learning!</p>
+  </div>
+
+  <!-- <section class="welcome">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6 colmn1">
+          <h1 class="h1 first">Visual Toolbox</h1>
+          <h1 class="h1 second">for Designing Online Learning</h1>
+          <div class="toolbox">
+            <img class="icon" src="icon.png" alt="icon">
+          </div>
+        </div>
+        <div class="col-6 colmn2">
+          <div class="logo">
+            <img src="JPROV.png" alt="Logo">
+          </div>
+          <div class="welcome">
+            <div class="container">
+              <div class="text">
+                <h6>Welcome to the Visual Toolbox for Designing Online Learning.</h6>
+                <p>A collectively gathered resource kit you can use to design your online courses. You'll find inspiration for creating your next online course and activities that you can easily incorporate into the online classroom. </p>
+                <h6>Let's start creating engaging virtual learning!</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <section>
+    <div class="align-right">
+      <button type="button" class="btn btn-light" onclick="myFunction1()"><i class="far fa-question-circle fa-2x favicon"></i></button>
+    </div>
+    <!-- <div class="container information margin indevelopment">
+      <h3>The Visual Toolbox for Designing Online Learning is still in development</h3>
+    </div> -->
+    <div class="container information margin" id="myinformation1">
+      <div>
+        <!-- <h5 class="margin">Pre-Loved Practices to boost your online class experience</h5> -->
+        <p class="headline2"> Pre-Loved Practices to boost your online class experience</p>
+        <p class="margin">The following activities in the table are classified according to <a class="blooms" href="https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/">Bloom's Taxonomy of Learning</a> and an Activate category to indicate
+          which activities you can use to achieve different goals in the classroom. </p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <i class="fas fa-pencil-alt fa-3x favicon"></i>
+          </div>
+          <div class="col">
+            <i class="fab fa-creative-commons-sa fa-3x favicon"></i>
+          </div>
+          <div class="col">
+            <i class="fas fa-search fa-3x favicon"></i>
+          </div>
+          <div class="col">
+            <i class="fas fa-check-circle fa-3x favicon"></i>
+          </div>
+          <div class="col">
+            <i class="far fa-lightbulb fa-3x favicon"></i>
+          </div>
+          <div class="col">
+            <i class="fas fa-cloud-meatball fa-3x favicon"></i>
+          </div>
+          <div class="col">
+            <i class="fas fa-child fa-3x favicon"></i>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col marginsmall">
+            Create
+            <hr>
+          </div>
+          <div class="col marginsmall">
+            Evaluate
+            <hr>
+          </div>
+          <div class="col marginsmall">
+            Analyze
+            <hr>
+          </div>
+          <div class="col marginsmall">
+            Apply
+            <hr>
+          </div>
+          <div class="col marginsmall">
+            Understand
+            <hr>
+          </div>
+          <div class="col marginsmall">
+            Remember
+            <hr>
+          </div>
+          <div class="col marginsmall">
+            Activate
+            <hr>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            Produce new or original work.
+          </div>
+          <div class="col">
+            Justify a stand or decision.
+          </div>
+          <div class="col">
+            Draw connections among ideas.
+          </div>
+          <div class="col">
+            Use information in new situations.
+          </div>
+          <div class="col">
+            Explain ideas or concepts.
+          </div>
+          <div class="col">
+            Recall facts or basic concepts.
+          </div>
+          <div class="col">
+            Inject energy into class, get people moving, and have fun.
+          </div>
+        </div>
+        <div class="margin marginsmall box">
+          <h6 class="marginsmall">Hover with the mouse over the visualization to get more information displayed on the right side of the page.</h6>
+          <h6>Click on the card or activities names to get a full description and implementation guidelines of the activity.</h6>
+        </div>
+        <div>
+          <button type="button" class="btn btn-info" onclick="myFunction1()">Great, I got it</button>
+        </div>
+
+      </div>
+    </div>
+
+  </section class="margin">
+  <section class="heatmap">
+    <!-- <h1>Activities to boost your online class experience</h1> -->
+    <div class="container-fluid heatmap">
+      <div class="row">
+        <div class="col-8 vizcol">
+          <div id="my_dataviz"></div>
+        </div>
+        <!-- Tooltip displayed here -->
+        <div id="imgcol" class="col-4 imgcol">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- <section>
+    <div class="align-right">
+      <button type="button" class="btn btn-light" onclick="myFunction2()"><i class="far fa-question-circle fa-2x favicon"></i></button>
+    </div>
+    <div class="container information" id="myinformation2">
+      <div>
+        <h5 class="margin">Get inspiration for designing your next online course</h5>
+        <p>Learn more about tools that can assist you during your online course and get inspiration on how to build your course (coming soon).</p>
+        <h6 class="margin marginsmall box">
+          Hover with the mouse over the text in the circles to get more information displayed on the right side.
+          <br>
+          Click circles to get deeper insights into the topics you are interested.
+        </h6>
+        <div>
+          <button type="button" class="btn btn-light" onclick="myFunction2()">Great, I got it</button>
+        </div>
+      </div>
+  </section> -->
+  <!-- <section class="circles">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-8">
+          <svg width="700" height="700" class="bubbleviz"></svg>
+        </div>
+        <!-- Tooltip displayed here -->
+  <!-- </div>
+    </div>
+  </section> -->
+  <section>
+    <div class="conatiner toolbox marginsubmit">
+      <h5 class="marginsmall margin">Do you want to submit your own practice, co-create the visual toolbox and build a community for designing online learning?</h5>
+      <p>We will review and publish your Pre-Loved practice here monthly- thanks for sharing!</p>
+      <a class="btn btn-info marginsmall margin" href="https://link.webropolsurveys.com/Participation/Public/5d410af2-89d9-406a-9810-7d5c21db1a11?displayId=Fin2432634" role="button">Submit your Pre-loved Practice here!</a>
+    </div>
+  </section>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>

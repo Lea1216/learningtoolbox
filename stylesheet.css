@@ -1,0 +1,72 @@
+body {
+  font-family: "Roboto";
+  font-weight: 300;
+}
+
+.headline1 {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 48px;
+}
+
+.headline2 {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.logo {
+  margin-left: 30px;
+  padding-top: 30px;
+}
+
+.center {
+  text-align: center;
+}
+
+.welcome {
+  margin-top: 50px;
+  width: 60%;
+}
+
+.descriptiontoolbox {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  margin-top: 80px;
+}
+
+.margintop {
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+.marginbottom {
+  margin-bottom: 40px;
+  padding-bottom: 50px;
+}
+
+.div1 {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.div2 {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.btn, .btn-info {
+  background-color: #3f989a !important;
+}
+
+.backgroundpattern {
+  background-image: url("backgroundpattern_large.png");
+  height: 300px;
+}
+
+.aalto {
+  width: 10%;
+  padding-bottom: 80px;
+}

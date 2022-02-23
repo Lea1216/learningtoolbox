@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- d3 script -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <!-- Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v6.0.0/js/all.js"></script>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <style>
+
+      body {
+        font-family: "Roboto";
+        font-weight: 300;
+        /* background-color: #FBFBFB; */
+      }
+
+      /* Check how to change in Roboto */
+      h1 {
+        font-family: "Roboto";
+        font-weight: 700;
+      }
+
+      .headline1 {
+        font-family: "Roboto";
+        font-weight: 300;
+        font-size: 30px;
+        margin-left: 120px;
+        margin-top: 20px;
+      }
+
+      .headline2 {
+        font-family: "Roboto";
+        font-weight: 300;
+        font-size: 20px;
+      }
+
+      .logo {
+        margin-left: 30px;
+        padding-top: 30px;
+      }
+
+      .home {
+        color: #3e989a;
+        margin-left: 1100px;
+      }
+
+      .headline {
+        height: 200px;
+        width: 80%;
+        margin-bottom: 40px;
+      }
+
+      .activity {
+        margin-top: 40px;
+        margin-left:120px;
+      }
+
+      .description {
+        background: #d9eaeb;
+        text-align: center;
+      }
+
+      .image {
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+
+      .box {
+        padding-top: 20px;
+        width: 60%;
+        margin: auto;
+        background: #bedcdd;
+        border-radius: 15px;
+      }
+
+      .blue {
+        color: #3f989a;
+        font-weight: 500;
+      }
+
+      .lila {
+        color: #644380;
+        font-weight: 500;
+      }
+
+      .implementation {
+        width: 80%;
+        margin: auto;
+        text-align: left;
+        margin-top: 40px;
+      }
+
+      .marginbottom {
+        margin-bottom: 10px;
+        padding-bottom: 20px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="logo">
+      <img src="JPROV.png" alt="Logo">
+      <a href="/Users/leablecher/Desktop/Toolbox/PrototypingLea/Combinations for website/Final Prototype/Heatmap/index.html"> <i class="fa-solid fa-house-chimney fa-2x favicon home"></i></a>
+    </div>
+    <section class="headline">
+      <p class="headline1">Local customs and manners</p>
+      <!-- <h1 class="activity">Local customs and manners</h1> -->
+      <p class="activity">Students are divided into groups and every group reads part of a long article and adds one comment about the text in discussion forum. In the live lecture, students are divided into breakout rooms where they will share the information of their part. A group discussion follows and the teacher will provide additional material.
+      The aim of the activity it to share, collaborate and discuss with fellow students and to let student decide where they want to deepen their knowledge.</p>
+    </section>
+      <div class="description">
+        <img class ="image" src="pictures/localcustomsandmanners.png" alt="Card image cap">
+        <div class="container box">
+          <div class="container cardRepetition">
+            <div class="row">
+              <div class="col-3">
+                <p class="blue">Resources</p>
+              </div>
+              <div class="col-3">
+                <p class="blue">Individual Work</p>
+              </div>
+              <div class="col-3">
+                <p class="blue">Team Work</p>
+              </div>
+              <div class="col-3">
+                <p class="blue">Mode</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3">
+                <p class="lila">Computer/Tablet, Apps/Online platform (Zoom, Flinga, Moodle)</p>
+              </div>
+              <div class="col-3">
+                <p class="lila">Yes</p>
+              </div>
+              <div class="col-3">
+                <p class="lila">Yes</p>
+              </div>
+              <div class="col-3">
+                <p class="lila">Online & Offline</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container implementation">
+          <p class="headline2">Implementation</p>
+          <!-- <h5 class="marginbottom">1. Implementation</h5> -->
+          <p class="steps">1.	Students are divided for example into four groups a, b, c, and d. Every group reads part of a long article about local customs, or anything else related to the course, at home.</p>
+          <p class="steps">2.	To make sure that every student has read his/her part, the students have to add one comment about the text in the discussion forum before the lesson. </p>
+          <p class="steps">3.	In the Zoom-lesson, students are divided into groups so that each group includes one student from the group a, b, c and d. In breakout rooms, students share the information of their part. Others ask questions and comment. During the discussion, groups add their observations to Flinga. </p>
+          <p class="steps">4.	The whole group will discuss the topics added to Flinga.</p>
+          <p class="steps">5.	Based on the whole group discussion, the teacher adds additional material to the learning platform, for example, videos related to discussion topics. Students can choose topic(s) that interest them and continue to deepen their knowledge of the topic and make a presentation about it.</p>
+          <p class="headline2">Facilitation Notes</p>
+          <!-- <h5 class="marginbottom">2. Facilitation Notes</h5> -->
+          <p class="marginbottom">The challenge is to get everyone to read their share of the article. If the student has not read his/her share, he or she cannot contribute in the group. The teacher needs to explain the task precisely so that the students come to class prepared. The teacher can also make sure in advance that everyone has read by asking students to write one comment about the text on a discussion forum.</p>
+        </div>
+      </div>
+  </body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- d3 script -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <!-- Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v6.0.0/js/all.js"></script>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <style>
+
+      body {
+        font-family: "Roboto";
+        font-weight: 300;
+        /* background-color: #FBFBFB; */
+      }
+
+      /* Check how to change in Roboto */
+      h1 {
+        font-family: "Roboto";
+        font-weight: 700;
+      }
+
+      .headline1 {
+        font-family: "Roboto";
+        font-weight: 300;
+        font-size: 30px;
+        margin-left: 120px;
+        margin-top: 20px;
+      }
+
+      .headline2 {
+        font-family: "Roboto";
+        font-weight: 300;
+        font-size: 20px;
+      }
+
+      .logo {
+        margin-left: 30px;
+        padding-top: 30px;
+      }
+
+      .home {
+        color: #3e989a;
+        margin-left: 1100px;
+      }
+
+      .headline {
+        height: 200px;
+        width: 80%;
+        margin-bottom: 40px;
+      }
+
+      .activity {
+        margin-top: 40px;
+        margin-left:120px;
+      }
+
+      .description {
+        background: #d9eaeb;
+        text-align: center;
+      }
+
+      .image {
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+
+      .box {
+        padding-top: 20px;
+        width: 60%;
+        margin: auto;
+        background: #bedcdd;
+        border-radius: 15px;
+      }
+
+      .blue {
+        color: #3f989a;
+        font-weight: 500;
+      }
+
+      .lila {
+        color: #644380;
+        font-weight: 500;
+      }
+
+      .implementation {
+        width: 80%;
+        margin: auto;
+        text-align: left;
+        margin-top: 40px;
+      }
+
+      .marginbottom {
+        margin-bottom: 10px;
+        padding-bottom: 20px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="logo">
+      <img src="JPROV.png" alt="Logo">
+      <a href="/Users/leablecher/Desktop/Toolbox/PrototypingLea/Combinations for website/Final Prototype/Heatmap/index.html"> <i class="fa-solid fa-house-chimney fa-2x favicon home"></i></a>
+    </div>
+    <section class="headline">
+      <p class="headline1">Peer Assessment</p>
+      <!-- <h1 class="activity">Peer Assessment</h1> -->
+      <p class="activity">Peer evaluation or assessment refers to the many ways in which students can share their creative work with peers for constructive feedback, and then use this feedback to revise and improve their work.
+                  The aim of the activity is to be in contact with other student projects, and enhance feedback opportunities. It also allows students to ask questions and interact with each other.</p>
+    </section>
+      <div class="description">
+        <img class ="image" src="pictures/peerassessment.png" alt="Card image cap">
+        <div class="container box">
+          <div class="container cardRepetition">
+            <div class="row">
+              <div class="col-3">
+                <p class="blue">Resources</p>
+              </div>
+              <div class="col-3">
+                <p class="blue">Individual Work</p>
+              </div>
+              <div class="col-3">
+                <p class="blue">Team Work</p>
+              </div>
+              <div class="col-3">
+                <p class="blue">Mode</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3">
+                <p class="lila">Computer/Tablet</p>
+              </div>
+              <div class="col-3">
+                <p class="lila">Yes</p>
+              </div>
+              <div class="col-3">
+                <p class="lila">Yes</p>
+              </div>
+              <div class="col-3">
+                <p class="lila">Online & Offline</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container implementation">
+          <p class="headline2">Implementation</p>
+          <!-- <h5 class="marginbottom">1. Implementation</h5> -->
+          <p>The implementation of the activity can be done in two different ways</p>
+          <p>1. Students create presentations and perform their final team presentations to the class (usually 4 students/team). After the presentation another group chosen by the teacher asks questions to the presenting team.</p>
+          <p>2. Students submit their group projects and their peers are required to individually read others' group projects and provide structured feedback in an online discussion forum. Students must also react to the feedback comments that their own group projects received. This will prompt discussion about the project. </p>
+          <p class="headline2">Facilitation Notes</p>
+          <!-- <h5 class="marginbottom">2. Facilitation Notes</h5> -->
+          <p class="marginbottom">The challenge with this activity is keeping with a rigid timeline, supporting quality feedback, and manage expectations.</p>
+
+        </div>
+      </div>
+  </body>
+</html>

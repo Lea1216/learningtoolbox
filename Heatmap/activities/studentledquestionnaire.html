@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- d3 script -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <!-- Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v6.0.0/js/all.js"></script>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <style>
+
+      body {
+        font-family: "Roboto";
+        font-weight: 300;
+        /* background-color: #FBFBFB; */
+      }
+
+      /* Check how to change in Roboto */
+      h1 {
+        font-family: "Roboto";
+        font-weight: 700;
+      }
+
+      .headline1 {
+        font-family: "Roboto";
+        font-weight: 300;
+        font-size: 30px;
+        margin-left: 120px;
+        margin-top: 20px;
+      }
+
+      .headline2 {
+        font-family: "Roboto";
+        font-weight: 300;
+        font-size: 20px;
+      }
+
+      .logo {
+        margin-left: 30px;
+        padding-top: 30px;
+      }
+
+      .home {
+        color: #3e989a;
+        margin-left: 1100px;
+      }
+
+      .headline {
+        height: 250px;
+        width: 80%;
+        margin-bottom: 40px;
+      }
+
+      .activity {
+        margin-top: 40px;
+        margin-left:120px;
+      }
+
+      .description {
+        background: #d9eaeb;
+        text-align: center;
+      }
+
+      .image {
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+
+      .box {
+        padding-top: 20px;
+        width: 60%;
+        margin: auto;
+        background: #bedcdd;
+        border-radius: 15px;
+      }
+
+      .blue {
+        color: #3f989a;
+        font-weight: 500;
+      }
+
+      .lila {
+        color: #644380;
+        font-weight: 500;
+      }
+
+      .implementation {
+        width: 80%;
+        margin: auto;
+        text-align: left;
+        margin-top: 40px;
+      }
+
+      .marginbottom {
+        margin-bottom: 10px;
+        padding-bottom: 20px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="logo">
+      <img src="JPROV.png" alt="Logo">
+      <a href="/Users/leablecher/Desktop/Toolbox/PrototypingLea/Combinations for website/Final Prototype/Heatmap/index.html"> <i class="fa-solid fa-house-chimney fa-2x favicon home"></i></a>
+    </div>
+    <section class="headline">
+      <p class="headline1">Student-led Questionnaire</p>
+      <!-- <h1 class="activity">Student-led Questionnaire</h1> -->
+      <p class="activity">Students will create and share quizzes about course content so that it is possible for them to access a significant pool of questions, test their knowledge, access the justifications and, if needed, further engage on forum conversations. Objectives of the activity are firstly to provide students with automatic, specific and personal feedback during the course. In addition, students receive information on how to organize their studies. The feedback helps them to decide which topics need to be learned better and how they perform in comparison to their peers. This enables learning throughout the course. Another goal is also to give fundamental feedback to educators and thus enable them to continuously improve their teaching. Building quizzes and collaborating with fellow students is a key learning experience, promoting their critical thinking and pedagogic interest and skills.</p>
+    </section>
+      <div class="description">
+        <img class ="image" src="pictures/studentledquestionnaire.png" alt="Card image cap">
+        <div class="container box">
+          <div class="container cardRepetition">
+            <div class="row">
+              <div class="col-3">
+                <p class="blue">Resources</p>
+              </div>
+              <div class="col-3">
+                <p class="blue">Individual Work</p>
+              </div>
+              <div class="col-3">
+                <p class="blue">Team Work</p>
+              </div>
+              <div class="col-3">
+                <p class="blue">Mode</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3">
+                <p class="lila">Computer/Tablet, Online Platform like Zoom</p>
+              </div>
+              <div class="col-3">
+                <p class="lila">Yes</p>
+              </div>
+              <div class="col-3">
+                <p class="lila">No</p>
+              </div>
+              <div class="col-3">
+                <p class="lila">Online</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container implementation">
+          <p class="headline2">Implementation</p>
+          <!-- <h5 class="marginbottom">1. Implementation</h5> -->
+          <p>1. Teachers will include an assignment for students to elaborate a set of questions for each lecture and relevant bibliographic material (e.g., mandatory readings). For instance, during a certain course, a student maybe assigned to build four
+            multiple choice questions for four lectures or chapters.</p>
+          <p>2. Students will be given guidelines, including examples and pedagogic best-practices orientations for proposing the multiple-choice questions. These guidelines will also assure that the type of questions is diverse, and includes
+              memorization, concept explanation, concept discrimination, application, analogy, critical thinking, among other cognitive operations, as adequative for the lectures’ subjects. Along with the questions, students will also propose the
+              justifications for the correct and incorrect answers. </p>
+          <p>3. The educator will review and validate the material proposed by students. A previous preparation work of identifying topics will assure that all relevant topics are included in the questions’ set. </p>
+          <p>4. The validated questions sets is uploaded in a platform for quizzes (e.g. moodle) allowing student registration and access to random sets of questions, with automatic grading, immediate review after the submission and access to the
+            justifications. Each question will have a discussion forum, allowing the students-teachers clarification of further aspects and feedback for the questions and explanations themselves.</p>
+          <p>5. According to each students’ profile of incorrect answers, an algorithm assigns an individual probability for certain type and domain of questions to reappear in future rounds.</p>
+          <p>6. Besides the feedback to each student test, a report (automatic email) will be sent to each registered student with the topics with better and worse grades, along with the general evolution from peers, from round to round. The grades, number of rounds and progression will be compared with each students’ grades obtains in the course summative evaluations. A students’ online survey will also characterize the students
+            experience and allow improving the system.</p>
+            <p class="headline2">Facilitation Notes</p>
+          <!-- <h5 class="marginbottom">2. Facilitation Notes</h5> -->
+          <p class="marginbottom">Educators need to provide explanations and guidance to students and teachers and need to be ready to answer questions. Educators need to allocate time for reviewing the students quiz proposals and the quizzes need to be acquainted with the
+            moodle software.</p>
+        </div>
+      </div>
+  </body>
+</html>

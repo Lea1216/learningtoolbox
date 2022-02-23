@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- d3 script -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <!-- Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v6.0.0/js/all.js"></script>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <style>
+
+      body {
+        font-family: "Roboto";
+        font-weight: 300;
+        /* background-color: #FBFBFB; */
+      }
+
+      /* Check how to change in Roboto */
+      h1 {
+        font-family: "Roboto";
+        font-weight: 700;
+      }
+
+      .headline1 {
+        font-family: "Roboto";
+        font-weight: 300;
+        font-size: 30px;
+        margin-left: 120px;
+        margin-top: 20px;
+      }
+
+      .headline2 {
+        font-family: "Roboto";
+        font-weight: 300;
+        font-size: 20px;
+      }
+
+
+      .logo {
+        margin-left: 30px;
+        padding-top: 30px;
+      }
+
+      .home {
+        color: #3e989a;
+        margin-left: 1100px;
+      }
+
+      .headline {
+        height: 200px;
+        width: 80%;
+        margin-bottom: 40px;
+      }
+
+      .activity {
+        margin-top: 40px;
+        margin-left:120px;
+      }
+
+      .description {
+        background: #d9eaeb;
+        text-align: center;
+      }
+
+      .image {
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+
+      .box {
+        padding-top: 20px;
+        width: 60%;
+        margin: auto;
+        background: #bedcdd;
+        border-radius: 15px;
+      }
+
+      .blue {
+        color: #3f989a;
+        font-weight: 500;
+      }
+
+      .lila {
+        color: #644380;
+        font-weight: 500;
+      }
+
+      .implementation {
+        width: 80%;
+        margin: auto;
+        text-align: left;
+        margin-top: 40px;
+      }
+
+      .marginbottom {
+        margin-bottom: 10px;
+        padding-bottom: 20px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="logo">
+      <img src="JPROV.png" alt="Logo">
+      <a href="/Users/leablecher/Desktop/Toolbox/PrototypingLea/Combinations for website/Final Prototype/Heatmap/index.html"> <i class="fa-solid fa-house-chimney fa-2x favicon home"></i></a>
+    </div>
+    <section class="headline">
+      <p class="headline1">Flipped Classroom</p>
+      <!-- <h1 class="activity">Flipped Classroom</h1> -->
+      <p class="activity">  Flipped Classroom is an approach in which direct instruction is shifted from the group room to the individual learning space and the resulting group room is transformed into a dynamic, interactive learning environment in which the teacher guides students in applying concepts and creatively engaging with the subject matter.
+      The aim of flipped classrooms are to mantain the motivation of students for theoretical classes, to monitor students' learning process and identifing problems and misconceptions, and to allow them to learn at their own pace.</p>
+    </section>
+      <div class="description">
+        <img class ="image" src="pictures/flippedclassroom.png" alt="Card image cap">
+        <div class="container box">
+          <div class="container cardRepetition">
+            <div class="row">
+              <div class="col-3">
+                <p class="blue">Resources</p>
+              </div>
+              <div class="col-3">
+                <p class="blue">Individual Work</p>
+              </div>
+              <div class="col-3">
+                <p class="blue">Team Work</p>
+              </div>
+              <div class="col-3">
+                <p class="blue">Mode</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3">
+                <p class="white">Computer / Tablet, Apps / Online Platforms: YouTube, Kahoot, <a href="https://pingo.coactum.de/">Pingo</a> </p>
+              </div>
+              <div class="col-3">
+                <p class="lila">Yes</p>
+              </div>
+              <div class="col-3">
+                <p class="lila">Yes</p>
+              </div>
+              <div class="col-3">
+                <p class="lila">Online & Offline</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container implementation">
+          <p class="headline2">Implementation</p>
+          <!-- <h5 class="marginbottom">1. Implementation</h5> -->
+          <p>1. Create slides and video with theoretical content and challenges. After viewing the video the student has one week to respond to the challenge and submit it on the platform. In the following synchronous class, there is a group discussion about the topic. Feedback is given in the classroom. We give the opportunity to re-submit a new version of the work.</p>
+          <p>2. The educator writes instructions for the homework to be completed before class. This homework typically includes watching 2-3 videos (10 minutes each) and answering/thinking about related questions. It might also include other material such as news or scientific papers. In class, the topics and questions are discussed with the students, and the more difficult concepts are explained. At the end of the theoretical class, everyone plays a 5 minute Kahoot. https://kahoot.com/</p>
+          <p>3. Send the material in advance and create quizzes in https://pingo.coactum.de/</p>
+          <p class="headline2">Facilitation Notes</p>
+          <!-- <h5 class="marginbottom">2. Facilitation Notes</h5> -->
+          <p class="marginbottom">The video needs to be designed very well and the synchronous activity needs to be interactive. The feedback processe needs to be carefully designed. For the lecturer, challenges include time management, fostering a good learning environment, maintain student motivation, and support the learning process without merely telling the solution.</p>
+        </div>
+      </div>
+  </body>
+</html>
