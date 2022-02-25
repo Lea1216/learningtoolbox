@@ -85,3 +85,14 @@ body {
   margin-top: 20px;
   border-color: #3f989a;
 }
+
+.reference {
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.click {
+  color: blue;
+  text-decoration: underline;
+}
